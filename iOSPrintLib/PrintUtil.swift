@@ -15,7 +15,7 @@ public class PrintUtil {
     }
     
     public func print() {
-        let message = "### test 0.0.2"
+        let message = "### test develop"
         Swift.print(message)
     }
 }
