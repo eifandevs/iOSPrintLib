@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A1BE4EF5252ED2A200608EDC /* iOSPrintLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A1BE4EF3252ED2A200608EDC /* iOSPrintLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BE4EFC252ED4C600608EDC /* PrintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BE4EFB252ED4C600608EDC /* PrintUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1BE4EF0252ED2A200608EDC /* iOSPrintLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSPrintLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BE4EF3252ED2A200608EDC /* iOSPrintLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSPrintLib.h; sourceTree = "<group>"; };
 		A1BE4EF4252ED2A200608EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1BE4EFB252ED4C600608EDC /* PrintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				A1BE4EF3252ED2A200608EDC /* iOSPrintLib.h */,
+				A1BE4EFB252ED4C600608EDC /* PrintUtil.swift */,
 				A1BE4EF4252ED2A200608EDC /* Info.plist */,
 			);
 			path = iOSPrintLib;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A1BE4EEF252ED2A200608EDC = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BE4EFC252ED4C600608EDC /* PrintUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		A1BE4EF9252ED2A200608EDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TBQA5RANYY;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.enfandevs.iOSPrintLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		A1BE4EFA252ED2A200608EDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TBQA5RANYY;
